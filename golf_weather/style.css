@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    width: 10%;
+    height: 10%;
+    margin-left: 2px;
+}
+
+input[type=text] {
+    text-align: center;
+}
+
+.currentWeather {
+    display: flex;
+    display: column;
+}
