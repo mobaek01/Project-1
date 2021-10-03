@@ -20,4 +20,13 @@ input[type=text] {
 .currentWeather {
     display: flex;
     display: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.weather {
+    color: green;
 }
