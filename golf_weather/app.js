@@ -13,7 +13,7 @@ $(() => {
                 console.log(info);
                 $('.container').remove()
                 for (const obj of info.data){
-                    const $carouselIndex = $('<div>').addClass('container').css('background-image', `url('/Users/mosesbaek/dev/Project-1/golf_weather/img/${obj.weather.description}.png')` ).appendTo('.currentWeather')
+                    const $carouselIndex = $('<div>').addClass('container').css('background-image', `url('img/${obj.weather.description}.png')` ).appendTo('.currentWeather')
                     const $dateTime = $('<h3>').addClass('weather').text(`Date: ${obj.timestamp_local}`).appendTo($carouselIndex)
                     const $description = $('<h4>').addClass('weather').text(obj.weather.description).appendTo($carouselIndex)
                     const $temp = $('<p>').addClass('weather').text(`Temperature: ${obj.temp} °F`).appendTo($carouselIndex)
