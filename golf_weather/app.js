@@ -2,6 +2,7 @@ $(() => {
     $('input[type="submit"]').on('click', (event) => {
         event.preventDefault()
 
+
         let cityName = $('input[type="text"]').val()
 
         $.ajax(
@@ -11,7 +12,7 @@ $(() => {
         ).then(
             (info) => {
                 console.log(info);
-                $('.container').remove()
+                $('.currentWeather').empty()
                 for (const obj of info.data){
                     const $carouselIndex = $('<div>').addClass('container').css('background-image', `url('img/${obj.weather.description}.png')` ).appendTo('.currentWeather')
                     const $dateTime = $('<h3>').addClass('weather').text(`Date: ${obj.timestamp_local}`).appendTo($carouselIndex)
@@ -24,6 +25,7 @@ $(() => {
                 let currentDivIndex = 0
                 let numOfDiv = $('.currentWeather').children().length - 1
 
+                $('.next').off()
                 $('.next').on('click', () => {
                     $('.currentWeather').children().eq(currentDivIndex).css('display', 'none')
                     if (currentDivIndex < numOfDiv){
@@ -34,6 +36,7 @@ $(() => {
                     $('.currentWeather').children().eq(currentDivIndex).css('display', 'block')
                 })
 
+                $('.previous').off()
                 $('.previous').on('click', () => {
                     $('.currentWeather').children().eq(currentDivIndex).css('display', 'none')
                     if (currentDivIndex > 0){
