@@ -15,6 +15,9 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('img/header-background.gif');
     background-repeat: no-repeat;
     background-position: center;
@@ -29,13 +32,11 @@ body {
 
 h1 {
     text-align: center;
-    padding-top: 2%;
     color: white;
 }
 
 h4 {
     text-align: center;
-    padding-top: 6%;
     color: white;
 }
 
