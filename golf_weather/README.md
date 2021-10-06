@@ -3,10 +3,10 @@
 
 ### Technologies Used:
 
-HTML
-CSS
-Javascript
-Jquery
+HTML  
+CSS  
+Javascript  
+Jquery  
 Ajax
 
 ### Approach Taken:
