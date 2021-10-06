@@ -15,6 +15,8 @@ At first, my initial idea was to find an API that provided information on golf c
 
 Using the carousel UI, the user is able to flip through 36 hours worth of weather conditions. Through the data that was retrieved from the weatherbit.io API, 36 div tags are created using a 'for of' loop that would store the information. Within each div tag, I appended multiple 'h' and 'p' tags that contained the weather condition information. Once each div tag has been created, the first div tag's display property was set to block and the remaining 35 div tag's display property was set to none. As you click the next or the previous button, the next div tag's display property switches to 'block', while the previous div tag's display property changes to 'none'.
 
+Modal
+
 ### Struggles:
 
 Some struggles that I encountered during Project 1 were finding an API with the correct set of data, maneuvering through the data of the selected API, and 'on click' event listeners duplicating.
