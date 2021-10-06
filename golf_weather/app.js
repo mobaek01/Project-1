@@ -52,4 +52,20 @@ $(() => {
             }
         )
     })
+
+    $('.gear').on('click', (event) => {
+        $(event.currentTarget).children().eq(1).css('display', 'block')
+    })
+
+    const $modal = $('.modal')
+    const $closeBtn = $('.close')
+
+    const closeModal = () => {
+        $modal.css('display', 'none')
+        return false
+    }
+
+
+    $closeBtn.on('click', closeModal)
+
 })

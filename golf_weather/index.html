@@ -8,27 +8,54 @@
         <title>Weather-Tee Time</title>
     </head>
     <body>
-        <div class = "navbar">
-            <a href = "https://www.callawaygolf.com/?gclid=CjwKCAjwkvWKBhB4EiwA-GHjFij04l1oR_BLtXWsK4dIsCZrRX43-u64kJe8SfDsSrbRjfgfkpgaBhoCUnwQAvD_BwE">Callaway</a>
-            <a href = "https://www.taylormadegolf.com/home?utm_source=google&utm_medium=paid_search&utm_campaign=nprd+0+0+pds+ggl+conv+gen+txt&gclid=CjwKCAjwkvWKBhB4EiwA-GHjFp_F2yaRlMHcCMP44jw_ZCcriKRieHA4VUoP8Asmdzao8p_0Td6RZxoCfOgQAvD_BwE">Taylormade</a>
-            <a href = "https://www.titleist.com/?gclid=CjwKCAjwkvWKBhB4EiwA-GHjForwhsXG2PcBQ7JJPKe50d1d1CY6XYczDXsCc_45D2X0drxlYJ7nOxoCPHUQAvD_BwE">Titleist</a></li>
-            <a href = "https://ping.com/en-us/">Ping</a>
-        </div>
-        <div class = 'header'>
-            <h1>CHECK THE WEATHER CONDITIONS FOR YOUR NEXT TEE TIME</h1>
-            <h4>**36 hour limit**</h4>
-        </div>
-        <div class = 'bigBox'>
-            <form>
-                <input type="text" placeholder="CITY"/>
-                <input type="submit" value="SUBMIT"/>
-            </form>
-            <div class = "currentWeather">
-
+        <div class = "top">
+            <div class = 'header'>
+                <h1>CHECK THE WEATHER CONDITIONS FOR YOUR NEXT TEE TIME</h1>
+                <h4>**36 hour limit**</h4>
             </div>
-            <div class = 'twoBtn'>
-                <button class = "previous" type="button" name="previous">PREVIOUS</button>
-                <button class = "next" type="button" name="next">NEXT</button>
+            <div class = 'bigBox'>
+                <form>
+                    <input type="text" placeholder="CITY"/>
+                    <input type="submit" value="SUBMIT"/>
+                </form>
+                <div class = "currentWeather">
+
+                </div>
+                <div class = 'twoBtn'>
+                    <button class = "previous" type="button" name="previous">PREVIOUS</button>
+                    <button class = "next" type="button" name="next">NEXT</button>
+                </div>
+            </div>
+        </div>
+        <div class = "bottom">
+            <div class = "gear">
+                <img id = "golfGear" src="img/Golf Gear.png" alt="">
+                <div class = "modal">
+                    <div class = "modalText">
+                        <button type="button" class="close">Close</button>
+                        <p>Check out the gear from the top Brands</p>
+                            <ul>
+                                <li><a href = "https://www.callawaygolf.com/?gclid=CjwKCAjwkvWKBhB4EiwA-GHjFv5DogZIJGARDy63DWu7SgA-6iN0mUXm4uZ1EVuyTNC9ihIcz92ssRoCewgQAvD_BwE">Callaway</a></li>
+                                <li><a href = "https://www.taylormadegolf.com/home?utm_source=google&utm_medium=paid_search&utm_campaign=nprd+0+0+pds+ggl+conv+gen+txt&gclid=CjwKCAjwkvWKBhB4EiwA-GHjFp_F2yaRlMHcCMP44jw_ZCcriKRieHA4VUoP8Asmdzao8p_0Td6RZxoCfOgQAvD_BwE">Taylormade</a></li>
+                                <li><a href = "https://www.titleist.com/?gclid=CjwKCAjwkvWKBhB4EiwA-GHjFgXfe8VHDDwbMqjQUT7sAU2cGnlMLVclNbB8h4HOsXld_qgD1nY6NBoCGuoQAvD_BwE">Titleist</a></li>
+                                <li><a href = "https://ping.com/en-us/">Ping</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "gear">
+                <img id = "scoreCard" src="img/scorecard.png" alt="">
+                <div class = "modal">
+                    <div class = "modalText">
+                        <button type="button" class="close">Close</button>
+                        <p>Check out leaderboards, schedules, and player information</p>
+                        <ul>
+                            <li><a href = "https://www.pgatour.com/leaderboard.html">Leaderboard</a></li>
+                            <li><a href = "https://www.pgatour.com/tournaments/schedule.html">Schedule</a></li>
+                            <li><a href = "https://www.pgatour.com/players.html">Player Information</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
